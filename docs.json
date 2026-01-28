@@ -24,49 +24,61 @@
     { "name": "App", "url": "https://aventor.ai", "icon": "rocket" },
     { "name": "Support", "url": "mailto:info@aventor.ai", "icon": "envelope" }
   ],
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": ["index", "getting-started", "video-tutorial", "faq"]
-    },
-    {
-      "group": "Create Ads",
-      "pages": [
-        "create-ads/overview",
-        "create-ads/brand-enrichment",
-        "create-ads/assets-attachments",
-        "create-ads/generate-images",
-        "create-ads/edit-variations",
-        "create-ads/preview-export"
-      ]
-    },
-    {
-      "group": "Campaigns",
-      "pages": [
-        "campaigns/overview",
-        "campaigns/ad-goals",
-        "campaigns/audience-targeting",
-        "campaigns/budget-allocation",
-        "campaigns/review-launch"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "integrations/overview",
-        "integrations/meta-ads",
-        { "page": "integrations/google-ads", "title": "Google Ads (Coming Soon)" }
-      ]
-    },
-    {
-      "group": "Help",
-      "pages": ["help/troubleshooting", "help/limits-safety", "help/credits-billing"]
-    }
-  ],
-  "tabs": [
-    { "name": "Documentation", "url": "/" },
-    { "name": "Changelog", "url": "changelog" }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["index", "getting-started", "video-tutorial", "faq"]
+          },
+          {
+            "group": "Create Ads",
+            "pages": [
+              "create-ads/overview",
+              "create-ads/brand-enrichment",
+              "create-ads/assets-attachments",
+              "create-ads/generate-images",
+              "create-ads/edit-variations",
+              "create-ads/preview-export"
+            ]
+          },
+          {
+            "group": "Campaigns",
+            "pages": [
+              "campaigns/overview",
+              "campaigns/ad-goals",
+              "campaigns/audience-targeting",
+              "campaigns/budget-allocation",
+              "campaigns/review-launch"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/meta-ads",
+              { "page": "integrations/google-ads", "title": "Google Ads (Coming Soon)" }
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": ["help/troubleshooting", "help/limits-safety", "help/credits-billing"]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "",
+            "pages": ["changelog"]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "x": "https://x.com/aventor_ai",
     "github": "https://github.com/tj150695/Aventor"
