@@ -1,0 +1,174 @@
+---
+title: "Meta Ads"
+description: "Connect Facebook and Instagram advertising"
+---
+
+## Overview
+
+Connect your Meta Ads account to launch campaigns directly to Facebook and Instagram from Aventor.
+
+## Prerequisites
+
+Before connecting, ensure you have:
+
+<AccordionGroup>
+  <Accordion title="Meta Business Account">
+    A Meta Business Manager account is required. Create one at [business.facebook.com](https://business.facebook.com) if you don't have one.
+  </Accordion>
+  <Accordion title="Active Ad Account">
+    An Ad Account with:
+    - Payment method configured
+    - Billing information set up
+    - Country/currency settings configured
+    - Account in good standing (not restricted)
+  </Accordion>
+  <Accordion title="Facebook Page">
+    At least one Facebook Page to run ads from. Ads require a Page as the identity shown to users.
+  </Accordion>
+</AccordionGroup>
+
+## Connecting Your Account
+
+<Steps>
+  <Step title="Start Connection">
+    Click **Connect Meta** when launching a campaign or from the integrations menu.
+  </Step>
+  <Step title="Log In to Facebook">
+    You'll be redirected to Facebook to log in with your credentials.
+  </Step>
+  <Step title="Grant Permissions">
+    Authorize Aventor to access your ad accounts and pages. See [Permissions](#permissions) below.
+  </Step>
+  <Step title="Select Ad Account">
+    Choose which Ad Account to use for campaigns.
+  </Step>
+  <Step title="Select Page">
+    Choose which Facebook Page will be shown as the advertiser.
+  </Step>
+</Steps>
+
+## Permissions
+
+When connecting, you'll be asked to grant these permissions:
+
+| Permission | Purpose |
+|------------|---------|
+| `ads_management` | Create and manage ad campaigns |
+| `ads_read` | Read campaign performance data |
+| `business_management` | Access your business assets |
+| `pages_read_engagement` | Read your Pages for ad identity |
+
+<Note>
+These are the minimum permissions required for Aventor to launch campaigns. We only access what's needed for campaign creation.
+</Note>
+
+## What Aventor Can Do
+
+With a connected Meta account, Aventor can:
+
+- **Create Campaigns** - Set up new ad campaigns with your generated creatives
+- **Configure Targeting** - Apply audience settings (age, location, interests)
+- **Set Budgets** - Configure daily or lifetime spending
+- **Launch Ads** - Submit campaigns directly to Meta for review
+
+## What Aventor Cannot Do
+
+Aventor does not:
+
+- Access your personal Facebook profile
+- Read your messages or private data
+- Modify existing campaigns not created by Aventor
+- Store your Facebook password
+
+## After Connection
+
+Once connected, you can:
+
+1. **Launch campaigns** directly from the Studio after generating images
+2. **Select different accounts** if you have multiple ad accounts
+3. **View connection status** in your account settings
+
+## Managing Your Connection
+
+### Disconnect
+
+To disconnect your Meta account:
+
+1. Go to your account settings in Aventor
+2. Click **Disconnect** next to Meta Ads
+3. Optionally, revoke access in your [Facebook Settings](https://www.facebook.com/settings?tab=business_tools) as well
+
+### Token Refresh
+
+Your connection uses secure OAuth tokens that:
+- Refresh automatically before expiration
+- Do not require you to log in again
+- Can be revoked at any time
+
+<Warning>
+If your connection stops working, you may need to reconnect. This can happen if you change your Facebook password or revoke access in Facebook settings.
+</Warning>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't see my Ad Account">
+    Ensure you have admin or advertiser access to the Ad Account in Business Manager. Only accounts you have permission to use will appear.
+  </Accordion>
+  <Accordion title="Connection failed">
+    Try these steps:
+    1. Clear your browser cookies and try again
+    2. Ensure you're logging into the correct Facebook account
+    3. Check that your Ad Account is not restricted
+    4. Verify payment method is valid
+  </Accordion>
+  <Accordion title="Campaign launch failed">
+    Common causes:
+    - Payment method declined
+    - Ad Account spending limit reached
+    - Policy violation in ad content
+    - Page restricted from advertising
+
+    Check Meta Ads Manager for specific error messages.
+  </Accordion>
+  <Accordion title="Wrong account connected">
+    Disconnect the current account and reconnect with the correct Facebook credentials.
+  </Accordion>
+</AccordionGroup>
+
+## Campaign Delivery
+
+After launching a campaign through Aventor:
+
+1. **Campaign Submitted** - Your campaign is sent to Meta
+2. **Meta Review** - Meta reviews your ads (typically within 24 hours)
+3. **Approval** - Once approved, ads start delivering
+4. **Monitoring** - Track performance in [Meta Ads Manager](https://www.facebook.com/adsmanager)
+
+<Tip>
+Aventor creates the campaign but does not manage ongoing optimization. Use Meta Ads Manager for performance monitoring, A/B testing, and adjustments.
+</Tip>
+
+## Supported Placements
+
+Campaigns launched through Aventor can appear on:
+
+- **Facebook Feed** - Main Facebook news feed
+- **Instagram Feed** - Instagram home feed
+- **Facebook Stories** - Full-screen story format
+- **Instagram Stories** - Vertical story format
+- **Facebook Reels** - Short-form video feed
+- **Instagram Reels** - Short-form video feed
+
+Placements are configured automatically based on your creative dimensions.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Set Campaign Goals" icon="bullseye" href="/campaigns/ad-goals">
+    Choose your objective
+  </Card>
+  <Card title="Configure Audience" icon="users" href="/campaigns/audience-targeting">
+    Define who sees your ads
+  </Card>
+</CardGroup>

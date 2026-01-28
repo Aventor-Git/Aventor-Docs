@@ -1,0 +1,96 @@
+---
+title: "Generate Images"
+description: "Create AI-powered ad images"
+---
+
+## Generation Process
+
+When you click **Generate**, Aventor creates multiple ad variations using different AI providers in parallel.
+
+## AI Providers
+
+Aventor uses three image generation providers:
+
+| Provider | Strengths |
+|----------|-----------|
+| OpenAI DALL-E | Photorealistic imagery, creative compositions |
+| Google Vertex Imagen | High fidelity, commercial-ready images |
+| Google Gemini | Versatile style, strong visual understanding |
+
+Each generation produces images from multiple providers for maximum variety.
+
+## Generation Settings
+
+### Resolution
+
+Default: 2K (2048px base size). Optimized for social media ad formats.
+
+### Aspect Ratio
+
+- **1:1** - Instagram feed, Facebook feed
+- **4:5** - Instagram feed (vertical)
+- **16:9** - Google Display, YouTube, Stories
+
+## Reference Images
+
+When you upload assets, they're included in the generation:
+
+<AccordionGroup>
+  <Accordion title="Logo Handling" icon="star">
+    - Placed in a clean corner with padding
+    - Logo shape, colors, and proportions preserved
+    - Logo text is the ONLY text in the image
+  </Accordion>
+  <Accordion title="Product Handling" icon="box">
+    - Featured as the hero element
+    - Product geometry and materials preserved
+    - AI creates complementary scenes
+  </Accordion>
+  <Accordion title="Style Reference" icon="palette">
+    - AI matches lighting and color grading
+    - Aesthetic mood is transferred
+    - Brand identity elements are not copied
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+Generated images are text-free except for any text in your provided logo. Aventor does not generate text overlays. Add your ad copy in the ad platform.
+</Warning>
+
+## Generation Time
+
+- Typical: 1-2 minutes
+- With reference images: 2-3 minutes
+- Multiple providers run in parallel
+
+<Note>
+If generation takes longer than 3 minutes, you may see a timeout. Refresh and try again - your credits won't be charged for failed generations.
+</Note>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Generation is slow">
+    Each generation calls multiple AI providers. Allow up to 2 minutes for all images to complete.
+  </Accordion>
+  <Accordion title="Getting rate limited (429 errors)">
+    This happens when too many requests are made. Wait 30-60 seconds and try again. Aventor automatically retries with exponential backoff.
+  </Accordion>
+  <Accordion title="Images don't match my brand">
+    Upload your logo, product images, and a style reference. The more context you provide, the better the results.
+  </Accordion>
+  <Accordion title="Low quality or artifacts">
+    Try generating again - AI results vary. If persistent, try a different brand description or simpler reference images.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Edit Your Images" icon="pen-to-square" href="/create-ads/edit-variations">
+    Refine with natural language
+  </Card>
+  <Card title="Preview & Export" icon="download" href="/create-ads/preview-export">
+    Download or launch your ads
+  </Card>
+</CardGroup>

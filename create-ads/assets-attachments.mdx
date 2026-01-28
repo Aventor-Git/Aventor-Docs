@@ -1,0 +1,113 @@
+---
+title: "Assets & Attachments"
+description: "Upload logos, products, and style references"
+---
+
+## Why Upload Assets?
+
+Uploading your brand assets helps Aventor create more accurate, on-brand ads:
+
+- **Logos** appear correctly in generated images
+- **Products** are featured as the hero element
+- **Style references** guide the visual aesthetic
+
+## Asset Types
+
+| Type | Use Case | File Types | Max Size |
+|------|----------|------------|----------|
+| Logo | Corner placement in ads | PNG, JPG, WebP | 5MB |
+| Product | Hero element in composition | PNG, JPG, WebP | 5MB |
+| Style Reference | Match lighting, colors, mood | PNG, JPG, WebP | 5MB |
+| Document | Brand guidelines, messaging | PDF | 20MB |
+
+## Uploading Assets
+
+<Steps>
+  <Step title="Click Attach">
+    Click the attachment button (paperclip icon) in the chat panel.
+  </Step>
+  <Step title="Select File">
+    Choose an image or PDF from your device.
+  </Step>
+  <Step title="Assign Role">
+    Select the asset role from the dropdown:
+    - **Logo** - Will be placed in a corner of generated images
+    - **Product** - Will be the hero/focal point
+    - **Style Reference** - AI will match the visual style
+    - **Document** - For brand guidelines (text extraction only)
+  </Step>
+  <Step title="Confirm">
+    Asset is uploaded and saved to your profile.
+  </Step>
+</Steps>
+
+## Role Behavior
+
+<AccordionGroup>
+  <Accordion title="Logo" icon="star">
+    - Placed in a clean corner with appropriate padding
+    - Logo shape, colors, and proportions are preserved
+    - Only text in your logo appears in the image
+    - One primary logo per profile
+  </Accordion>
+  <Accordion title="Product" icon="box">
+    - Featured as the hero element in compositions
+    - Product geometry and proportions are preserved
+    - AI creates complementary backgrounds and scenes
+    - Multiple products supported
+  </Accordion>
+  <Accordion title="Style Reference" icon="palette">
+    - AI matches lighting, color grading, and mood
+    - Affects aesthetic treatment, not brand identity
+    - Great for maintaining visual consistency
+    - One style reference recommended
+  </Accordion>
+  <Accordion title="Document" icon="file-pdf">
+    - PDF text is extracted for brand context
+    - Used to inform generation prompts
+    - Not sent to image generation AI
+    - Great for brand guidelines
+  </Accordion>
+</AccordionGroup>
+
+## Managing Assets
+
+Assets are saved to your profile and persist across sessions.
+
+To manage assets:
+1. Go to **Dashboard** > **Assets** tab
+2. View all uploaded assets by profile
+3. Delete or re-assign roles as needed
+
+<Note>
+Only image assets (not PDFs) are sent to the image generation AI. PDFs are used to extract brand context for the generation prompt.
+</Note>
+
+## Session Toggles
+
+For each session, you can include or exclude specific assets:
+
+- Check/uncheck assets in the session panel
+- Unchecked assets won't be used for that session
+- Your preferences persist for the session
+- Original assets remain in your profile
+
+## Limits
+
+<Warning>
+- **Images**: Max 5MB each
+- **PDFs**: Max 20MB each
+- **Total assets**: Max 10 per profile
+- **Gemini limit**: Max 14 images per generation
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Generate Images" icon="images" href="/create-ads/generate-images">
+    Create ads with your assets
+  </Card>
+  <Card title="Limits & Safety" icon="shield" href="/help/limits-safety">
+    Full list of limits and rules
+  </Card>
+</CardGroup>

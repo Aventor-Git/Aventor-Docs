@@ -1,0 +1,104 @@
+---
+title: "Integrations Overview"
+description: "Connect your ad platforms"
+---
+
+## Why Connect Ad Platforms?
+
+Connecting your ad accounts lets Aventor launch campaigns directly without leaving the app.
+
+<CardGroup cols={2}>
+  <Card title="One-Click Launch" icon="rocket">
+    Launch campaigns directly from Aventor to your ad accounts
+  </Card>
+  <Card title="Pre-Filled Settings" icon="sliders">
+    Campaign settings configured automatically based on your goals
+  </Card>
+  <Card title="Account Selection" icon="building">
+    Choose which ad account and page to use for each campaign
+  </Card>
+  <Card title="Secure Connection" icon="shield-check">
+    OAuth-based authentication - we never store your password
+  </Card>
+</CardGroup>
+
+## Supported Platforms
+
+| Platform | Status | Features |
+|----------|--------|----------|
+| Meta Ads (Facebook/Instagram) | Live | Full campaign creation and launch |
+| Google Ads | Coming Soon | Search and Performance Max campaigns |
+
+## Meta Ads
+
+<Card title="Meta Ads" icon="meta" href="/integrations/meta-ads">
+Launch campaigns to Facebook and Instagram directly from Aventor
+</Card>
+
+**Capabilities:**
+- Create campaigns with generated creatives
+- Target audiences by demographics and interests
+- Set daily or lifetime budgets
+- Launch to Feed, Stories, and Reels placements
+
+**Requirements:**
+- Meta Business account
+- Active Ad Account with payment method
+- Facebook Page to advertise from
+
+## Google Ads
+
+<Card title="Google Ads (Coming Soon)" icon="google" href="/integrations/google-ads">
+Launch Search and Performance Max campaigns
+</Card>
+
+<Info>
+Google Ads integration is currently in development. You can download your generated images and upload them to Google Ads manually.
+</Info>
+
+## How Connections Work
+
+<Steps>
+  <Step title="Click Connect">
+    Start the connection flow from the campaign launch screen or integrations settings.
+  </Step>
+  <Step title="Authorize Access">
+    Log in to your ad platform and grant Aventor permission to manage campaigns.
+  </Step>
+  <Step title="Select Account">
+    Choose which ad account and page (for Meta) to use.
+  </Step>
+  <Step title="Launch Campaigns">
+    Launch campaigns directly from Aventor with your connected account.
+  </Step>
+</Steps>
+
+## Connection Security
+
+<AccordionGroup>
+  <Accordion title="What data does Aventor access?">
+    Aventor only accesses what's needed to launch campaigns:
+    - Your ad accounts list (to let you select which to use)
+    - Your Facebook Pages (to advertise from)
+    - Campaign creation permissions
+
+    We do not access personal data, messages, or unrelated account information.
+  </Accordion>
+  <Accordion title="Can I disconnect my account?">
+    Yes. You can disconnect your ad platform at any time from your account settings or directly in the ad platform's settings.
+  </Accordion>
+  <Accordion title="How are credentials stored?">
+    We use OAuth tokens that expire and refresh automatically. Your password is never stored - authentication happens directly with the ad platform.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Connect Meta Ads" icon="meta" href="/integrations/meta-ads">
+    Set up Facebook and Instagram
+  </Card>
+  <Card title="Launch Campaigns" icon="rocket" href="/campaigns/overview">
+    Create your first campaign
+  </Card>
+</CardGroup>
