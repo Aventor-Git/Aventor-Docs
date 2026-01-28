@@ -1,43 +1,41 @@
-# Mintlify Starter Kit
+# Aventor Docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+User documentation for Aventor, the AI‑powered ad creation platform.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+- Docs site: https://docs.aventor.ai
+- Product: https://aventor.ai
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## About
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+This repo contains the Mintlify documentation site for Aventor. It covers getting started, the ad creation workflow, attachments, campaign launch, and platform integrations.
 
-## Development
+## Local preview
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Install the Mintlify CLI:
 
 ```
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Run the dev server from the repo root (where `docs.json` lives):
 
 ```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Preview at `http://localhost:3000`.
 
-## Publishing changes
+## Structure
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+- `docs.json` — navigation and site settings
+- `*.mdx` — documentation pages
+- `images/` — screenshots and media
+- `logo/` — brand assets used by the docs site
 
-## Need help?
+## Contributing
 
-### Troubleshooting
+Keep changes user‑focused and accurate to the current product. Every page should include frontmatter (`title`, `description`) and use Mintlify components for scannable content.
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+## Support
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+If you spot an error or want a new page, reach out at `info@aventor.ai`.
