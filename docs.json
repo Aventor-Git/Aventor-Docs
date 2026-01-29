@@ -65,7 +65,7 @@
             "pages": [
               "integrations/overview",
               "integrations/meta-ads",
-              { "page": "integrations/google-ads", "title": "Google Ads (Coming Soon)" }
+              "integrations/google-ads"
             ]
           },
           {
@@ -76,9 +76,7 @@
       },
       {
         "tab": "Changelog",
-        "groups": [
-          { "group": "Changelog", "pages": ["changelog"] }
-        ]
+        "pages": ["changelog"]
       }
     ]
   },
