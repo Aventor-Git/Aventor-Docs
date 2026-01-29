@@ -1,13 +1,36 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Aventor44",
+  "name": "Aventor",
   "colors": {
     "primary": "#6366F1",
     "light": "#818CF8",
     "dark": "#4F46E5"
   },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://aventor.ai"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Open Aventor",
+      "href": "https://aventor.ai"
+    },
+    "links": [
+      { "label": "Support", "href": "mailto:info@aventor.ai" }
+    ]
+  },
   "navigation": {
+    "anchors": [
+      { "anchor": "App", "href": "https://aventor.ai", "icon": "rocket" },
+      { "anchor": "Support", "href": "mailto:info@aventor.ai", "icon": "envelope" }
+    ],
     "tabs": [
       {
         "tab": "Documentation",
@@ -38,11 +61,31 @@
             ]
           },
           {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/meta-ads",
+              { "page": "integrations/google-ads", "title": "Google Ads (Coming Soon)" }
+            ]
+          },
+          {
             "group": "Help",
             "pages": ["help/troubleshooting", "help/limits-safety", "help/credits-billing"]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          { "group": "Changelog", "pages": ["changelog"] }
+        ]
       }
     ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/aventor_ai",
+      "github": "https://github.com/tj150695/Aventor"
+    }
   }
 }
