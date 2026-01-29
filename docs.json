@@ -7,23 +7,6 @@
     "light": "#818CF8",
     "dark": "#4F46E5"
   },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
-  },
-  "topbarLinks": [
-    { "name": "Support", "url": "mailto:info@aventor.ai" }
-  ],
-  "topbarCtaButton": {
-    "type": "link",
-    "name": "Open Aventor",
-    "url": "https://aventor.ai"
-  },
-  "anchors": [
-    { "name": "App", "url": "https://aventor.ai", "icon": "rocket" },
-    { "name": "Support", "url": "mailto:info@aventor.ai", "icon": "envelope" }
-  ],
   "navigation": {
     "tabs": [
       {
@@ -55,32 +38,11 @@
             ]
           },
           {
-            "group": "Integrations",
-            "pages": [
-              "integrations/overview",
-              "integrations/meta-ads",
-              { "page": "integrations/google-ads", "title": "Google Ads (Coming Soon)" }
-            ]
-          },
-          {
             "group": "Help",
             "pages": ["help/troubleshooting", "help/limits-safety", "help/credits-billing"]
           }
         ]
-      },
-      {
-        "tab": "Changelog",
-        "groups": [
-          {
-            "group": "",
-            "pages": ["changelog"]
-          }
-        ]
       }
     ]
-  },
-  "footerSocials": {
-    "x": "https://x.com/aventor_ai",
-    "github": "https://github.com/tj150695/Aventor"
   }
 }
