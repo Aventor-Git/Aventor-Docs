@@ -61,12 +61,16 @@
             ]
           },
           {
-            "group": "Integrations",
-            "pages": [
-              "integrations/overview",
-              "integrations/meta-ads",
-              "integrations/google-ads"
-            ]
+            "group": "Integrations Overview",
+            "pages": ["integrations/overview"]
+          },
+          {
+            "group": "Meta Ads",
+            "pages": ["integrations/meta-ads", "integrations/pixel-setup"]
+          },
+          {
+            "group": "Google Ads",
+            "pages": ["integrations/google-ads"]
           },
           {
             "group": "Help",
